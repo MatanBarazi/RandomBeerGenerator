@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const beerBtn = document.querySelector('.beer-button');
     const randomBeer = document.querySelector('.random-beer');
     const descriptionDisplay = document.querySelector('.description');
+    const img_beer = document.querySelector('#PicOfBeer');
 
     function getData()
     {
@@ -17,9 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 const {volume} = data[0];
                 const volumeValue = volume.value;
                 const volumeUnit = volume.unit;
+                const img_url = data[0].image_url;
 
                 randomBeer.textContent = name + ' ' + volumeValue + ' ' + volumeUnit;
                 descriptionDisplay.textContent = description;
+                img_beer.src = img_url;
             })
             .catch(error => {
                 alert("Something went wrong :( ");
