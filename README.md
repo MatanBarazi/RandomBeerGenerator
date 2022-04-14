@@ -11,6 +11,5 @@ It uses The Punk API, which is a free and open-source API with Brewdog's catalog
 * Bootstrap (v5.0)
 
 ## Demo
-
-
+![ALT "A demo video"](https://github.com/MatanBarazi/RandomBeerGenerator/blob/main/BeerGenerator/description.gif)
 
